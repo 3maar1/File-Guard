@@ -22,3 +22,8 @@ rename option: select the directory of the file you want to rename (ex:C:\Users\
 
 Note for optimize reviewer: hackatime tracked this project under 2 names (Optimize-1, Trackme)
 Cause: changed the folder name.
+
+Notes for users:
+1- you cannot select multiple directiories to track changes in
+2- you can not choose multiple files to delete
+3- click the empty button to remove unneccessary files (for example, sys32.exe).
