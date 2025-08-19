@@ -15,10 +15,11 @@ window.configure(bg="black")
 window.geometry('700x500')
 # Functions
 def danger():
-    print()
+    webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+    # :) this won't delete sys32...
 def huh():
     webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
-    ";)"
+    # :) 
 def rename():
     loc = filedialog.askdirectory(title="File Directory")
     cur = filedialog.askopenfilename(title="File Path")
