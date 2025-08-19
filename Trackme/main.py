@@ -3,6 +3,7 @@ from tkinter import *
 from tkinter import filedialog, simpledialog
 from watchdog.observers import Observer
 from watchdog.events import LoggingEventHandler
+import webbrowser
 import shutil
 import sys
 import time
@@ -14,7 +15,8 @@ window.configure(bg="black")
 window.geometry('700x500')
 # Functions
 def huh():
-    print("deleting sys32...")
+    webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+    ";)"
 def rename():
     loc = filedialog.askdirectory(title="File Directory")
     cur = filedialog.askopenfilename(title="File Path")
