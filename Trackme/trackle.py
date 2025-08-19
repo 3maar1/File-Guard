@@ -14,6 +14,8 @@ labels=[]
 window.configure(bg="black")
 window.geometry('700x500')
 # Functions
+def danger():
+    print()
 def huh():
     webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
     ";)"
@@ -126,6 +128,7 @@ Button(window,width=12,text="Dark Mode",command=dark).place(relx=0.9,rely=0.9,an
 Button(window,width=12,text="Light Mode",command=light).place(relx=0.9,rely=0.84,anchor="center")
 Button(window,width=12,text="Red Mode",command=red).place(relx=0.9,rely=0.78,anchor="center")
 Button(window,width=12,text="Surprise...",command=huh).place(relx=0.9,rely=0.72,anchor="center")
+Button(window,width=12,text=" ",command=danger).place(relx=0.9,rely=0.66,anchor="center")
 #-------------------------------------------------------------------------------------------------------
 # Labels
 label1=Label(window,text="Hi, I'm trackle, your personal file guard!",font="none 20 bold italic",bg="black",fg="white")
