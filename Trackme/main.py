@@ -91,10 +91,13 @@ def light():
         lt7=Label(window,text="For a similar TUI project that uses a bit more memory, check: https://github.com/3maar1/Trackle",font = "none 9 italic",fg="black",bg="white")
         lt7.place(relx=0.4,rely=0.8,anchor="center")
         labels.append(lt7)
+def red():
+    print()
 #-------------------------------------------------------------------------------------------------------
 # Theme
 Button(window,width=12,text="Dark Mode",command=dark).place(relx=0.9,rely=0.9,anchor="center")
 Button(window,width=12,text="Light Mode",command=light).place(relx=0.9,rely=0.84,anchor="center")
+Button(window,width=12,text="Red Mode",command=red).place(relx=0.9,rely=0.78,anchor="center")
 #-------------------------------------------------------------------------------------------------------
 # Labels
 label1=Label(window,text="Hi, I'm trackle, your personal file guard!",font="none 20 bold italic",bg="black",fg="white")
