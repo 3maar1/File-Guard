@@ -63,6 +63,9 @@ def dark():
         dk6=Label(window,text="Made by 3maar, all rights reserved.",font="none 9 italic",fg="white",bg="black")
         dk6.place(relx=0.15,rely=0.85,anchor="center")
         labels.append(dk6)
+        dk7=Label(window,text="For a similar TUI project that uses a bit more memory, check: https://github.com/3maar1/Trackle",font = "none 9 italic",fg="white",bg="black")
+        dk7.place(relx=0.4,rely=0.8,anchor="center")
+        labels.append(dk7)
 def light():
     if True:
         clearme()
@@ -85,6 +88,9 @@ def light():
         lt6=Label(window,text="Made by 3maar, all rights reserved.",font="none 9 italic",fg="black",bg="white")
         lt6.place(relx=0.15,rely=0.85,anchor="center")
         labels.append(lt6)
+        lt7=Label(window,text="For a similar TUI project that uses a bit more memory, check: https://github.com/3maar1/Trackle",font = "none 9 italic",fg="black",bg="white")
+        lt7.place(relx=0.4,rely=0.8,anchor="center")
+        labels.append(lt7)
 #-------------------------------------------------------------------------------------------------------
 # Theme
 Button(window,width=12,text="Dark Mode",command=dark).place(relx=0.9,rely=0.9,anchor="center")
@@ -109,6 +115,9 @@ labels.append(label5)
 label6=Label(window,text="Made by 3maar, all rights reserved.",font="none 9 italic",fg="white",bg="black")
 label6.place(relx=0.15,rely=0.85,anchor="center")
 labels.append(label6)
+label7=Label(window,text="For a similar TUI project that uses a bit more memory, check: https://github.com/3maar1/Trackle",font = "none 9 italic",fg="white",bg="black")
+label7.place(relx=0.4,rely=0.8,anchor="center")
+labels.append(label7)
 #-------------------------------------------------------------------------------------------------------
 # Functional
 Button(window,text="Track Activity",command=select).place(relx=0.5,rely=0.3,anchor="center")
