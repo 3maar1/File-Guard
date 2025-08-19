@@ -20,7 +20,7 @@ rename option: select the directory of the file you want to rename (ex:C:\Users\
 
 
 
-Note for optimize reviewer: hackatime tracked this project under 2 names (Optimize-1, Trackme)
+Note for optimize reviewer: hackatime tracked this project under 2 names (Optimize-1, Trackme, File-Guard)
 Cause: changed the folder name.
 
 Notes for users:
