@@ -8,6 +8,7 @@ import shutil
 import sys
 import time
 import logging
+import random
 
 window = Tk()
 labels=[]
@@ -15,6 +16,7 @@ window.configure(bg="black")
 window.geometry('700x500')
 # Functions
 def rbs():
+    choices=["rock","paper","scissors"]
     print()
 def danger():
     webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
