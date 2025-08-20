@@ -75,7 +75,7 @@ def dark():
         dk7=Label(window,text="For a similar TUI project that uses a bit more memory, check: https://github.com/3maar1/Trackle",font = "none 9 italic",fg="white",bg="black")
         dk7.place(relx=0.4,rely=0.8,anchor="center")
         labels.append(dk7)
-        dk8=Label(window,text=0.5,font="none 9 italic",fg="white",bg="black")
+        dk8=Label(window,text="rock paper scissors!",font="none 9 italic",fg="white",bg="black")
         dk8.place(relx=0.5,rely=0.75,anchor="center")
         labels.append(dk8)
 def light():
