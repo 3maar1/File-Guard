@@ -14,6 +14,8 @@ labels=[]
 window.configure(bg="black")
 window.geometry('700x500')
 # Functions
+def rbs():
+    print()
 def danger():
     webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
     # :) this won't delete sys32...
@@ -73,6 +75,9 @@ def dark():
         dk7=Label(window,text="For a similar TUI project that uses a bit more memory, check: https://github.com/3maar1/Trackle",font = "none 9 italic",fg="white",bg="black")
         dk7.place(relx=0.4,rely=0.8,anchor="center")
         labels.append(dk7)
+        dk8=Label(window,text=0.5,font="none 9 italic",fg="white",bg="black")
+        dk8.place(relx=0.5,rely=0.75,anchor="center")
+        labels.append(dk8)
 def light():
     if True:
         clearme()
@@ -98,6 +103,9 @@ def light():
         lt7=Label(window,text="For a similar TUI project that uses a bit more memory, check: https://github.com/3maar1/Trackle",font = "none 9 italic",fg="black",bg="white")
         lt7.place(relx=0.4,rely=0.8,anchor="center")
         labels.append(lt7)
+        lt8=Label(window,text="rock paper scissors!",font="none 9 italic",fg="black",bg="white")
+        lt8.place(relx=0.5,rely=0.75,anchor="center")
+        labels.append(lt8)
 def red():
     if True:
         clearme()
@@ -123,6 +131,9 @@ def red():
         rd7=Label(window,text="For a similar TUI project that uses a bit more memory, check: https://github.com/3maar1/Trackle",font = "none 9 italic",fg="yellow",bg="red")
         rd7.place(relx=0.4,rely=0.8,anchor="center")
         labels.append(rd7)
+        rd8=Label(window,text="rock paper scissors!",bg="red",fg="yellow",font="none 9 italic")
+        rd8.place(relx=0.5,rely=0.75,anchor="center")
+        labels.append(rd8)
 #-------------------------------------------------------------------------------------------------------
 # Theme
 Button(window,width=12,text="Dark Mode",command=dark).place(relx=0.9,rely=0.9,anchor="center")
@@ -153,8 +164,12 @@ labels.append(label6)
 label7=Label(window,text="For a similar TUI project that uses a bit more memory, check: https://github.com/3maar1/Trackle",font = "none 9 italic",fg="white",bg="black")
 label7.place(relx=0.4,rely=0.8,anchor="center")
 labels.append(label7)
+label8=Label(window,text="rock paper scissors!",font="none 9 italic",bg="black",fg="white")
+label8.place(relx=0.5,rely=0.75,anchor="center")
+labels.append(label8)
 #-------------------------------------------------------------------------------------------------------
 # Functional
+Button(window,text="MiniGame",command=rbs).place(relx=0.5,rely=0.7,anchor="center")
 Button(window,text="Track Activity",command=select).place(relx=0.5,rely=0.3,anchor="center")
 Button(window,text="Delete File",command=delete).place(relx=0.5,rely=0.4,anchor="center")
 Button(window,text="Move File",command=move).place(relx=0.5,rely=0.5,anchor="center")
