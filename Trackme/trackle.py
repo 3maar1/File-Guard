@@ -9,6 +9,7 @@ import sys
 import time
 import logging
 import random
+from tkinter import messagebox
 
 window = Tk()
 labels=[]
@@ -17,7 +18,14 @@ window.geometry('700x500')
 # Functions
 def rbs():
     choices=["rock","paper","scissors"]
-    print()
+    choice=simpledialog.askstring("your turn", "choose rock, paper or scissors")
+    pc=random.choice(choices)
+    if choice==pc:
+        messagebox.showinfo("Result",f"It's a tie, I chose {pc}, you chose {choice}.")
+    elif (choice == "rock" and pc == "scissors") or (choice == "scissors" and pc=="paper") or (choice == "paper" and pc== "rock"):
+        messagebox.showinfo("Result",f"You win! I chose {pc}, you chose {choice}.")
+    else:
+        messagebox.showinfo("Result",f"I win, you chose {choice}, i chose {pc}.")
 def danger():
     webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
     # :) this won't delete sys32...
