@@ -15,7 +15,7 @@ import yt_dlp
 window = Tk()
 labels=[]
 window.configure(bg="black")
-window.geometry('700x700')
+window.geometry('1920x1080')
 # Functions
 def yd():
     url=simpledialog.askstring("Link","Enter the video url: ")
@@ -23,6 +23,7 @@ def yd():
     ydl_op={'format':'best'}
     with yt_dlp.YoutubeDL(ydl_op) as ydl:
         ydl.download([url])
+        messagebox.showinfo("Done",f"Downloaded the video successfully!")
 def rps():
     choices=["rock","paper","scissors"]
     choice=simpledialog.askstring("your turn", "choose rock, paper or scissors")
