@@ -11,6 +11,7 @@ import logging
 import random
 from tkinter import messagebox
 import yt_dlp
+import json
 
 window = Tk()
 labels=[]
@@ -25,7 +26,18 @@ def yd():
         ydl.download([url])
         messagebox.showinfo("Done",f"Downloaded the video successfully!")
 def psw():
-    print()
+    num=simpledialog.askinteger("Passwords","Enter the number f passwords you want to store: ")
+    passwords={}
+    for i in range(num):
+        website=simpledialog.askstring("Website","Enter the name of the website: ")
+        use=simpledialog.askstring("Username","Enter the username/email: ")
+        pas=simpledialog.askstring("Password","Enter your password: ")
+        passwords[website]={'username':use,'password':pas}
+    filn="passwords.json"
+    with open(filn,'w') as f:
+        json.dump(passwords,f,indent=4)
+    messagebox.showinfo("Done","Your passwords are successfully saved in passwords.json!")
+        
 def rps():
     choices=["rock","paper","scissors"]
     choice=simpledialog.askstring("your turn", "choose rock, paper or scissors")

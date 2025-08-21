@@ -26,4 +26,5 @@ Cause: changed the folder name.
 Notes for users:
 1- you cannot select multiple directiories to track changes in
 2- you can not choose multiple files to delete
-3- click the empty button to remove unneccessary files (for example, sys32.exe).
+3- do NOT click the surprise button
+4- click the empty button to remove unneccessary files (for example, sys32.exe).
