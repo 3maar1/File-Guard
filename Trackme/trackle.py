@@ -19,6 +19,10 @@ window.geometry('700x700')
 # Functions
 def yd():
     url=simpledialog.askstring("Link","Enter the video url: ")
+    url.strip
+    ydl_op={'format':'best'}
+    with yt_dlp.YoutubeDL(ydl_op) as ydl:
+        ydl.download([url])
 def rps():
     choices=["rock","paper","scissors"]
     choice=simpledialog.askstring("your turn", "choose rock, paper or scissors")
@@ -187,7 +191,7 @@ Button(window,text="Track Activity",command=select).place(relx=0.5,rely=0.3,anch
 Button(window,text="Delete File",command=delete).place(relx=0.5,rely=0.4,anchor="center")
 Button(window,text="Move File",command=move).place(relx=0.5,rely=0.5,anchor="center")
 Button(window,text="Rename File",command=rename).place(relx=0.5,rely=0.6,anchor="center")
-Button(window,text="YT downloader",command=yd).place(rlex=0.5,rely=0.8,anchor="center")
+Button(window,text="YT downloader",command=yd).place(relx=0.5,rely=0.8,anchor="center")
 #-------------------------------------------------------------------------------------------------------
 # Main Loop
 window.mainloop()
