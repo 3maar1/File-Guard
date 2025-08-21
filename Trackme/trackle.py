@@ -10,13 +10,16 @@ import time
 import logging
 import random
 from tkinter import messagebox
+import yt_dlp
 
 window = Tk()
 labels=[]
 window.configure(bg="black")
 window.geometry('700x700')
 # Functions
-def rbs():
+def yd():
+    url=simpledialog.askstring("Link","Enter the video url: ")
+def rps():
     choices=["rock","paper","scissors"]
     choice=simpledialog.askstring("your turn", "choose rock, paper or scissors")
     pc=random.choice(choices)
@@ -179,11 +182,12 @@ label8.place(relx=0.5,rely=0.75,anchor="center")
 labels.append(label8)
 #-------------------------------------------------------------------------------------------------------
 # Functional
-Button(window,text="MiniGame",command=rbs).place(relx=0.5,rely=0.7,anchor="center")
+Button(window,text="MiniGame",command=rps).place(relx=0.5,rely=0.7,anchor="center")
 Button(window,text="Track Activity",command=select).place(relx=0.5,rely=0.3,anchor="center")
 Button(window,text="Delete File",command=delete).place(relx=0.5,rely=0.4,anchor="center")
 Button(window,text="Move File",command=move).place(relx=0.5,rely=0.5,anchor="center")
 Button(window,text="Rename File",command=rename).place(relx=0.5,rely=0.6,anchor="center")
+Button(window,text="YT downloader",command=yd).place(rlex=0.5,rely=0.8,anchor="center")
 #-------------------------------------------------------------------------------------------------------
 # Main Loop
 window.mainloop()
