@@ -16,11 +16,7 @@ move option: select the current path of the file (ex:C:\Users\someone\file.txt) 
 
 rename option: select the directory of the file you want to rename (ex:C:\Users\directory\) then the full path (ex:C:\Users\directory\file.txt) and finally write the new name of the file with its format (ex:newfile.md).
 
-
-
-
-
-Note for optimize reviewer: hackatime tracked this project under 2 names (Optimize-1, Trackme, File-Guard)
+Note for optimize reviewer: hackatime tracked this project under 3 names (Optimize-1, Trackme, File-Guard)
 Cause: changed the folder name.
 
 Notes for users:
